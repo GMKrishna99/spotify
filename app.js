@@ -3,13 +3,15 @@
  * @copyright gmk 2024
  */
 
-
 "use strict";
 
 // node Modules
 
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+
+// custom modules
+const login = require("./src/routes/login.route");
 
 // initial express app
 
@@ -26,9 +28,7 @@ app.use(express.static(`${__dirname}/public`));
 app.use(cors()).use(cookieParser());
 
 // Login Page
-app.get("/login", (req, res) => {
-  res.send(`Login`);
-});
+app.use("/login", login);
 
 // app listen
 
