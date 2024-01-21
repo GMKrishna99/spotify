@@ -11,6 +11,15 @@ const express = require("express");
 
 const app = express();
 
+// EJS Settings
+app.set("view engine", "ejs");
+
+// Setting static directory
+app.use(express.static(`${__dirname}/public`));
+
+// Enable cors & cookieParser
+app.use(cors()).use(cookieParser());
+
 // Login Page
 app.get("/login", (req, res) => {
   res.send(`Login`);
