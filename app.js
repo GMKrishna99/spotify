@@ -11,6 +11,11 @@ const express = require("express");
 
 const app = express();
 
+// Login Page
+app.get("/login", (req, res) => {
+  res.send(`Login`);
+});
+
 // app listen
 
 app.listen(5000, () => {
