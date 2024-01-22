@@ -1,0 +1,59 @@
+/* login css */
+
+/* custom colors and spacing variables */
+@import url("./variables.css");
+/* custom Typography  */
+@import url("./typography.css");
+/* reset defaults */
+@import url("./reset.css");
+/* base css file */
+@import url("./base.css");
+
+/* reused styles */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+/* component */
+.btn {
+  max-width: max-content;
+  min-width: max-content;
+  height: 40px;
+  padding-inline: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-full);
+}
+
+/* login page */
+.login-page {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  padding: var(--space-2);
+  gap: var(--space-2);
+}
+:where(.banner, .content) {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-extra-large);
+  overflow: hidden;
+}
+.content {
+  background-image: url("/images/login-bg-pattern.png");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center;
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+4643
