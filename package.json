@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon npm"
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "gmk",
@@ -15,7 +15,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.2",
     "ejs": "^3.1.9",
-    "express": "^4.18.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
     "nodemon": "^3.0.3"
   }
 }
