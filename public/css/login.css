@@ -21,13 +21,19 @@
   max-width: max-content;
   min-width: max-content;
   height: 40px;
-  padding-inline: var(--space-6);
+  padding-inline: var(--space-4) var(--space-6);
   display: flex;
   align-items: center;
   gap: var(--space-2);
   border-radius: var(--radius-full);
+  background-color: var(--primary);
+  color: var(--on-primary);
+  --state-layer-bg: var(--on-primary);
+  transition: box-shadow var(--tr-duration-short-2) var(--tr-easing-linear);
 }
-
+.btn:hover:not(:focus) {
+  box-shadow: var(--shadow-1);
+}
 /* login page */
 .login-page {
   height: 100%;
@@ -53,7 +59,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
-
-
-4643
+.btn {
+  margin-inline: auto;
+  margin-block-start: var(--space-4);
+}
