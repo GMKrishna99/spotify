@@ -135,5 +135,17 @@
     margin-inline-start: auto;
     font-size: var(--fs-body-large);
     line-height: var(--lh-body-large);
+    letter-spacing: var(--ls-p-050);
+    font-weight: var(--fw-regular);
+  }
+}
+
+/* larger than 1400px */
+@media (min-width: 1400px) {
+  .title {
+    line-height: var(--lh-display-large);
+  }
+  .btn {
+    margin-block-start: var(--space-10);
   }
 }
